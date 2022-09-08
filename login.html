@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src="FORM1.js"></script>
+
+
+</head>
+<body style="background:url(image/bg2.png);background-position-x: center;background-size: 1600px">
+<div style=" margin-top:100px;">
+     
+     <div style="width: 100%;flex-direction: column;align-items: center;display: flex;">
+        <p id="sid">
+                Login To Student Portal
+        </p>
+        <div style="display: flex; flex-direction:column;text-align: center;align-items: center;background-color: rgb(170 219 200 / 42%);padding: 70px 144px;
+        padding-left: 91px;">
+            <form id="Loginpage">
+            <div style="display: flex; flex-direction:row;text-align: center;align-items: center;">
+               
+            <label style="width: 200px;">
+                NAME
+            </label>
+            <p>
+                :
+            </p>
+            <input type="text" name="NAME" id="NAME">
+        </div>
+            <div style="display: flex; flex-direction:row;text-align: center;align-items: center;">
+                <label style="width: 200px;">
+                    PASSSWORD
+                </label>
+                <p>
+                    :
+                </p>
+                <input type="password" name="PASSSWORD" id="PASSWORD">
+            
+            </div>
+            <div style="display: flex; flex-direction:row;text-align: center;align-items: center;">
+                
+       
+        </div>
+    </form>
+    <nav style="display:flex;flex-direction:row">
+    <button type="submit" onclick="signUp()" id="signUp" style="margin-left: 50PX;">Register</button>
+    <button onclick="signIn()" id="signIn" style="margin-left: 25PX;">login</button>
+    <button onclick="signOut()" id="signOut" style="margin-left: 25PX;">Log-OUT</button>
+ 
+    </nav>
+    </div>
+</div>
+
+</body>
+</html>
